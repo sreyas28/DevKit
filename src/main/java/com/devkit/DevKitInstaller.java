@@ -60,7 +60,7 @@ public class DevKitInstaller {
               --detect-pkg          Print detected package manager
               --paths               Prints all the paths present in your Operating System
               --update              Updates Your PC
-              --tools               Tells what you have selected
+              --tools               Tells what you have selected and Install it
               -h, --help            Show this help message
             """);
     }
