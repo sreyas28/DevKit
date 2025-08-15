@@ -1,0 +1,10 @@
+com/devkit/core/PackageManagerDetector$1.class
+com/devkit/core/PathManager.class
+com/devkit/DevKitInstaller.class
+com/devkit/core/InstallerContext.class
+com/devkit/core/OSDetector.class
+com/devkit/core/SystemUpdater.class
+com/devkit/core/PackageManagerDetector$PackageManagers.class
+com/devkit/core/OSDetector$OS.class
+com/devkit/core/SystemUpdater$1.class
+com/devkit/core/PackageManagerDetector.class

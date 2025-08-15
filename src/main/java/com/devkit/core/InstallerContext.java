@@ -2,7 +2,7 @@ package com.devkit.core;
 
 public class InstallerContext {
     private final OSDetector.OS os;
-    private final PackageManagerDetector.pakageManagers packageManager;
+    private final PackageManagerDetector.PackageManagers packageManager;
 
     public InstallerContext(){
         this.os = new OSDetector().detectOs();
@@ -13,7 +13,7 @@ public class InstallerContext {
         return os;
     }
 
-    public PackageManagerDetector.pakageManagers getPackageManager() {
+    public PackageManagerDetector.PackageManagers getPackageManager() {
         return packageManager;
     }
 }

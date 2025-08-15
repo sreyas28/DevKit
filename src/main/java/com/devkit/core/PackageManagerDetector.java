@@ -8,29 +8,29 @@ import java.io.InputStreamReader;
 
 public class PackageManagerDetector {
 
-    public enum pakageManagers{
+    public enum PackageManagers{
         winglet, choco, apt, dnf, pacman, brew, none
     }
 
-    public pakageManagers DetectPackageManager(OSDetector.OS os){
+    public PackageManagers DetectPackageManager(OSDetector.OS os){
         switch (os){
             case Windows:
-                if (isCommandAvailable("winget")) return pakageManagers.winglet;
-                if (isCommandAvailable("choco")) return pakageManagers.choco;
+                if (isCommandAvailable("winget")) return PackageManagers.winglet;
+                if (isCommandAvailable("choco")) return PackageManagers.choco;
                 break;
 
             case Linux:
-                if (isCommandAvailable("apt")) return pakageManagers.apt;
-                if (isCommandAvailable("dnf")) return pakageManagers.dnf;
-                if (isCommandAvailable("pacman")) return pakageManagers.pacman;
+                if (isCommandAvailable("apt")) return PackageManagers.apt;
+                if (isCommandAvailable("dnf")) return PackageManagers.dnf;
+                if (isCommandAvailable("pacman")) return PackageManagers.pacman;
                 break;
 
             case MacOS:
-                if (isCommandAvailable("brew")) return pakageManagers.brew;
+                if (isCommandAvailable("brew")) return PackageManagers.brew;
                 break;
         }
 
-        return pakageManagers.none;
+        return PackageManagers.none;
     }
 
     private boolean isCommandAvailable(String command) {

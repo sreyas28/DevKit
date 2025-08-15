@@ -1,13 +1,10 @@
 package com.devkit;
 
-import com.devkit.core.InstallerContext;
-import com.devkit.core.OSDetector;
-import com.devkit.core.PackageManagerDetector;
-import com.devkit.core.PathManager;
+import com.devkit.core.*;
 
 public class DevKitInstaller {
 
-    private static final String VERSION = "DevKit Installer v1.0.0";
+    private static final String VERSION = "DevKit Installer v1.0.0-SnapShot";
 
     public static void main(String[] args) {
         InstallerContext installerContext = new InstallerContext();
@@ -36,6 +33,10 @@ public class DevKitInstaller {
                 pathManager.viewPaths();
                 break;
 
+            case "--update":
+                new SystemUpdater().updateSystem();
+                break;
+
             default:
                 System.err.println("Unknown option: " + args[0]);
                 printHelp();
@@ -52,7 +53,8 @@ public class DevKitInstaller {
               --detect-os           Print detected operating system
               --detect-pkg          Print detected package manager
               --paths               Prints all the paths present in your Operating System
-              -h, --help                Show this help message
+              --update              Updates Your PC
+              -h, --help            Show this help message
             """);
     }
 
