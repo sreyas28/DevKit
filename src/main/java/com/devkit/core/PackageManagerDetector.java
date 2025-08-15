@@ -9,13 +9,13 @@ import java.io.InputStreamReader;
 public class PackageManagerDetector {
 
     public enum PackageManagers{
-        winglet, choco, apt, dnf, pacman, brew, none
+        winget, choco, apt, dnf, pacman, brew, none
     }
 
     public PackageManagers DetectPackageManager(OSDetector.OS os){
         switch (os){
             case Windows:
-                if (isCommandAvailable("winget")) return PackageManagers.winglet;
+                if (isCommandAvailable("winget")) return PackageManagers.winget;
                 if (isCommandAvailable("choco")) return PackageManagers.choco;
                 break;
 

@@ -1,6 +1,7 @@
 package com.devkit;
 
 import com.devkit.core.*;
+import com.devkit.tools.*;
 
 public class DevKitInstaller {
 
@@ -9,6 +10,7 @@ public class DevKitInstaller {
     public static void main(String[] args) {
         InstallerContext installerContext = new InstallerContext();
         PathManager pathManager = new PathManager();
+        ToolConfigLoader toolConfigLoader = new ToolConfigLoader();
 
         if (args.length == 0 || args[0].equals("--help") || args[0].equals("-h")) {
             printHelp();
@@ -37,6 +39,10 @@ public class DevKitInstaller {
                 new SystemUpdater().updateSystem();
                 break;
 
+            case "--tools":
+                toolConfigLoader.loadToolConfig();
+                break;
+
             default:
                 System.err.println("Unknown option: " + args[0]);
                 printHelp();
@@ -54,6 +60,7 @@ public class DevKitInstaller {
               --detect-pkg          Print detected package manager
               --paths               Prints all the paths present in your Operating System
               --update              Updates Your PC
+              --tools               Tells what you have selected
               -h, --help            Show this help message
             """);
     }

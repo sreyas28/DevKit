@@ -1,0 +1,120 @@
+# Languages
+java:
+  apt: "sudo apt install openjdk-17-jdk"
+  dnf: "sudo dnf install java-17-openjdk-devel"
+  pacman: "sudo pacman -S jdk-openjdk"
+  brew: "brew install openjdk@17"
+  windows: "winget install EclipseAdoptium.OpenJDK.17"
+
+python:
+  apt: "sudo apt install python3"
+  dnf: "sudo dnf install python3"
+  pacman: "sudo pacman -S python"
+  brew: "brew install python"
+  windows: "winget install Python.Python.3"
+
+cpp:
+  apt: "sudo apt install g++"
+  dnf: "sudo dnf install gcc-c++"
+  pacman: "sudo pacman -S gcc"
+  brew: "brew install gcc"
+  windows: "winget install LLVM.LLVM"  # or install MSVC via Visual Studio
+
+c:
+  apt: "sudo apt install gcc"
+  dnf: "sudo dnf install gcc"
+  pacman: "sudo pacman -S gcc"
+  brew: "brew install gcc"
+  windows: "winget install LLVM.LLVM"  # or install MSVC via Visual Studio
+
+nodejs:
+  apt: "sudo apt install nodejs"
+  dnf: "sudo dnf install nodejs"
+  pacman: "sudo pacman -S nodejs"
+  brew: "brew install node"
+  windows: "winget install OpenJS.NodeJS"
+
+go:
+  apt: "sudo apt install golang"
+  dnf: "sudo dnf install golang"
+  pacman: "sudo pacman -S go"
+  brew: "brew install go"
+  windows: "winget install GoLang.Go"
+
+# Tools
+git:
+  apt: "sudo apt install git"
+  dnf: "sudo dnf install git"
+  pacman: "sudo pacman -S git"
+  brew: "brew install git"
+  windows: "winget install Git.Git"
+
+docker:
+  apt: "sudo apt install docker.io"
+  dnf: "sudo dnf install docker"
+  pacman: "sudo pacman -S docker"
+  brew: "brew install docker"
+  windows: "winget install Docker.DockerDesktop"
+
+kubectl:
+  apt: "sudo apt install kubectl"
+  dnf: "sudo dnf install kubernetes-client"
+  pacman: "sudo pacman -S kubectl"
+  brew: "brew install kubectl"
+  windows: "winget install Kubernetes.kubectl"
+
+vim:
+  apt: "sudo apt install vim"
+  dnf: "sudo dnf install vim-enhanced"
+  pacman: "sudo pacman -S vim"
+  brew: "brew install vim"
+  windows: "winget install Vim.Vim"
+
+curl:
+  apt: "sudo apt install curl"
+  dnf: "sudo dnf install curl"
+  pacman: "sudo pacman -S curl"
+  brew: "brew install curl"
+  windows: "winget install Curl.Curl"
+
+wget:
+  apt: "sudo apt install wget"
+  dnf: "sudo dnf install wget"
+  pacman: "sudo pacman -S wget"
+  brew: "brew install wget"
+  windows: "winget install GNU.Wget"
+
+make:
+  apt: "sudo apt install make"
+  dnf: "sudo dnf install make"
+  pacman: "sudo pacman -S make"
+  brew: "brew install make"
+  windows: "winget install GnuWin32.Make"
+
+gcc:
+  apt: "sudo apt install gcc"
+  dnf: "sudo dnf install gcc"
+  pacman: "sudo pacman -S gcc"
+  brew: "brew install gcc"
+  windows: "winget install LLVM.LLVM"
+
+g++:
+  apt: "sudo apt install g++"
+  dnf: "sudo dnf install gcc-c++"
+  pacman: "sudo pacman -S gcc"
+  brew: "brew install gcc"
+  windows: "winget install LLVM.LLVM"
+
+gradle:
+  apt: "sudo apt install gradle"
+  dnf: "sudo dnf install gradle"
+  pacman: "sudo pacman -S gradle"
+  brew: "brew install gradle"
+  windows: "winget install Gradle.Gradle"
+
+maven:
+  apt: "sudo apt install maven"
+  dnf: "sudo dnf install maven"
+  pacman: "sudo pacman -S maven"
+  brew: "brew install maven"
+  windows: "winget install Apache.Maven"

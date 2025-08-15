@@ -1,13 +1,25 @@
 
+# 🌐 DevKit Configuration — Select Tools to Install
+# ✅ Set to true to install, false to skip
 
 # Languages
-java : true
-python : true
-#cpp: true
-#c: true
-#nodejs: true
-#go: true
+java: false
+python: false
+cpp: false
+c: false
+nodejs: false
+go: false
 
 # Tools
-#docker: true
-#git: true
+git: true
+docker: false
+kubectl: false
+vim: false
+curl: false
+wget: false
+make: false
+gcc: false
+g++: false
+gradle: false
+maven: false
+
