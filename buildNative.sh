@@ -20,3 +20,5 @@ jpackage --name DevKitInstaller \
         #  --runtime-image custom-jre 
         #  --license-file LICENSE.txt
         #  --dest output
+
+cp -r installer-resources/config DevKitInstaller/bin
